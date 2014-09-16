@@ -1,0 +1,14 @@
+body {
+  background: #fff;
+  color: #281A27;
+  font-family: sans-serif;
+}
+
+/*Links*/
+a {
+  color: grey;
+}
+
+a:hover {
+  color: #BD908D;
+}
