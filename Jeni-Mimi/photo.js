@@ -34,3 +34,8 @@ document.getElementById("snap").addEventListener("click", function() {
 });
 
 }, false);
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> b8c1eb0d1161b2e7e3b7dcd4b8775064950d1098
