@@ -1,25 +1,16 @@
-html, body, h1, form, fieldset, legend, ol, li {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background: url('../img/orange.png');
   font-family: 'PT Sans', sans-serif;
 }
 
 article {
-  padding: 20%;
+  margin: 5% 25%;
 }
 
 h1 {
   font-family: 'Sigmar One', cursive;
   font-size: 3em;
   text-align: center;
-}
-
-header {
-  width: 100%;
 }
 
 nav {
@@ -32,6 +23,22 @@ nav {
 .nav-li {
   display: inline-block;
   margin-left: 1em;
+}
+
+video {
+  border-radius: 1.5em;
+  margin-left: 2em;
+}
+
+#snap {
+  border-radius: 0.5em;
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 5% 38%;
+}
+
+#canvas {
+  border-radius: 1.5em;
 }
 
 fieldset {

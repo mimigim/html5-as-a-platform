@@ -11,20 +11,20 @@
         <link rel="stylesheet" href="css/base.css">
     </head>
     <body>
-      <header>
-        <h1>Our Assignment</h1>
         <nav>
           <ul>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="audio.html">Audio</a>
-            </li>
-            <li><a href="form.html">Form</a></li>
+            <li class="nav-li"><a href="index.html">Home</a></li>
+            <li class="nav-li"><a href="video.html">Video</a></li>
+            <li class="nav-li"><a href="form.html">Form</a></li>
           </ul>
         </nav>
-      </header>
       <main>
+        <article>
+          <video id="video" width="530" height="398" autoplay></video>
+          <button id="snap">Snap Photo</button>
+          <canvas id="canvas" width="640" height="480"></canvas>
+        </article>
       </main>
-
-
+      <script type="text/javascript" src="photo.js"></script>
     </body>
 </html>
