@@ -6,74 +6,86 @@
     <meta name="description" content="Form to help keep in touch.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/base.css">
     <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <header>
+        <h1>Our Assignment</h1>
+        <nav>
+          <ul>
+            <li class="nav-li"><a href="video.html">Video</a></li>
+            <li class="nav-li"><a href="audio.html">Audio</a>
+            </li>
+            <li class="nav-li"><a href="form.html">Form</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
-      <h1>KEEP IN TOUCH</h1>
-      <form method="post">
-        <fieldset id="general">
-          <legend>General Information</legend>
-          <ol>
-            <li>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text"  placeholder="first and last name" required aria-required="true" autofocus>
-            </li>
-            <li>
-              <label for "email">Email</label>
-              <input id="email" name="email" type="email"  placeholder="example@domain.com" required aria-required="true">
-            </li>
-            <li>
-              <label for "phone">Phone</label>
-              <input id="phone" name="phone" type="tel">
-            </li>
-            <li>
-              <label for "website">Website</label>
-              <input id="website" name="website" type="url" maxlength="200">
-            </li>
-          </ol>
-        </fieldset>
-        <fieldset id="general">
-          <legend>Other</legend>
-          <ol>
-            <li>
-              <label for="time">Best Time to Contact</label>
-              <select id="time" name="select">
-                <option value="-">-</option>
-                <option value="AM">AM</option>
-                <option value="PM">PM</option>
-                <option value="anytime">anytime</option>
-              </select>
-            </li>
-            <li>
-              <label for "message">Message</label><br>
-              <textarea id="message" name="message" type="text"></textarea>
-            </li>
-          </ol>
-        </fieldset>
-        <fieldsset>
-          <button type="submit">SUBMIT</button>
-        </fieldset>
-      </form>
-      <script>
-        if (window.localStorage) {
-          var Name = document.getElementById('name');
-          var Email = document.getElementById('email');
+      <article>
+        <h1>KEEP IN TOUCH</h1>
+        <form method="post">
+          <fieldset id="general">
+            <legend>General Information</legend>
+            <ol>
+              <li>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text"  placeholder="first and last name" required aria-required="true" autofocus>
+              </li>
+              <li>
+                <label for "email">Email</label>
+                <input id="email" name="email" type="email"  placeholder="example@domain.com" required aria-required="true">
+              </li>
+              <li>
+                <label for "phone">Phone</label>
+                <input id="phone" name="phone" type="tel">
+              </li>
+              <li>
+                <label for "website">Website</label>
+                <input id="website" name="website" type="url" maxlength="200">
+              </li>
+            </ol>
+          </fieldset>
+          <fieldset id="general">
+            <legend>Other</legend>
+            <ol>
+              <li>
+                <label for="time">Best Time to Contact</label>
+                <select id="time" name="select">
+                  <option value="-">-</option>
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                  <option value="anytime">anytime</option>
+                </select>
+              </li>
+              <li>
+                <label for "message">Message</label><br>
+                <textarea id="message" name="message" type="text"></textarea>
+              </li>
+            </ol>
+          </fieldset>
+          <fieldsset>
+            <button type="submit">SUBMIT</button>
+          </fieldset>
+        </form>
+        <script>
+          if (window.localStorage) {
+            var Name = document.getElementById('name');
+            var Email = document.getElementById('email');
 
-          Name.value = localStorage.getItem('name');
-          Email.value = localStorage.getItem('email');
+            Name.value = localStorage.getItem('name');
+            Email.value = localStorage.getItem('email');
 
-          Name.addEventListener('input', function() {
-            localStorage.setItem('name', Name.value);
-          }, false);
-          Email.addEventListener('input', function() {
-            localStorage.setItem('email', Email.value);
-          }, false);
-        }
-      </script>
+            Name.addEventListener('input', function() {
+              localStorage.setItem('name', Name.value);
+            }, false);
+            Email.addEventListener('input', function() {
+              localStorage.setItem('email', Email.value);
+            }, false);
+          }
+        </script>
+      </article>
     </main>
   </body>
 </html>
